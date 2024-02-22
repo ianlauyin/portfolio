@@ -63,3 +63,19 @@
   animation-name: nav-to-title;
   animation-duration: 1s;
 }
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+}
+
+.skill-list li img {
+  height: 20px;
+  object-fit: contain;
+  margin-right: 5px;
+}
