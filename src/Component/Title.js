@@ -3,11 +3,12 @@ import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Contact from "./Contact";
 import TitleNavi from "./TitleNavi";
+import { Grow } from "@mui/material";
 
 export default function Title({ setSection, section }) {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isNavBar, setIsNavBar] = useState(false);
   let content = null;
-  if (!isLoading) {
+  if (isNavBar) {
     switch (section) {
       case "about":
         content = <AboutMe />;
@@ -26,54 +27,61 @@ export default function Title({ setSection, section }) {
     if (section.length) {
       setSection(value);
     } else {
-      setIsLoading(true);
       setSection(value);
-      const delay = setInterval(() => setIsLoading(false), 1100);
+      const delay = setInterval(() => setIsNavBar(true), 1100);
       setTimeout(() => clearInterval(delay), 1100);
     }
   };
 
   const naviBar = (
     <div role="tablist" className="tabs tabs-bordered tabs-lg">
-      <input
-        type="radio"
-        role="tab"
-        className="tab"
-        aria-label="ABOUT ME"
-        checked={section === "about"}
-        onChange={() => handleChangeSection("about")}
-      />
-      <input
-        type="radio"
-        role="tab"
-        className="tab"
-        aria-label="PROJECT"
-        checked={section === "project"}
-        onChange={() => handleChangeSection("project")}
-      />
-      <input
-        type="radio"
-        role="tab"
-        className="tab"
-        aria-label="CONTACT"
-        checked={section === "contact"}
-        onChange={() => handleChangeSection("contact")}
-      />
+      <Grow in={isNavBar}>
+        <input
+          type="radio"
+          role="tab"
+          className="tab"
+          aria-label="ABOUT ME"
+          checked={section === "about"}
+          onChange={() => handleChangeSection("about")}
+        />
+      </Grow>
+      <Grow in={isNavBar} {...(isNavBar ? { timeout: 1000 } : {})}>
+        <input
+          type="radio"
+          role="tab"
+          className="tab"
+          aria-label="PROJECT"
+          checked={section === "project"}
+          onChange={() => handleChangeSection("project")}
+        />
+      </Grow>
+      <Grow in={isNavBar} {...(isNavBar ? { timeout: 2000 } : {})}>
+        <input
+          type="radio"
+          role="tab"
+          className="tab"
+          aria-label="CONTACT"
+          checked={section === "contact"}
+          onChange={() => handleChangeSection("contact")}
+        />
+      </Grow>
     </div>
   );
 
-  const navi =
-    isLoading || !section.length ? (
-      <TitleNavi handleChangeSection={handleChangeSection} />
-    ) : (
-      naviBar
-    );
+  const navi = isNavBar ? (
+    naviBar
+  ) : (
+    <TitleNavi handleChangeSection={handleChangeSection} />
+  );
 
   return (
     <div className={`space-y-5 `}>
       <div
         className={`items-start flex flex-col cursor-pointer title-div`}
-        onClick={() => setSection("")}
+        onClick={() => {
+          setSection("");
+          setIsNavBar(false);
+        }}
       >
         <b className="text-6xl title-name">Ian Lau</b>
         <h2 className="text-3xl">Software Engineer</h2>
