@@ -7,6 +7,7 @@ import { Grow } from "@mui/material";
 
 export default function Title({ setSection, section }) {
   const [isNavBar, setIsNavBar] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   let content = null;
   if (isNavBar) {
     switch (section) {
@@ -28,7 +29,11 @@ export default function Title({ setSection, section }) {
       setSection(value);
     } else {
       setSection(value);
-      const delay = setInterval(() => setIsNavBar(true), 1100);
+      setIsLoading(true);
+      const delay = setInterval(() => {
+        setIsLoading(false);
+        setIsNavBar(true);
+      }, 1100);
       setTimeout(() => clearInterval(delay), 1100);
     }
   };
@@ -75,18 +80,32 @@ export default function Title({ setSection, section }) {
   );
 
   return (
-    <div className={`space-y-5 `}>
+    <div className={`space-y-5`}>
       <div
-        className={`items-start flex flex-col cursor-pointer title-div`}
-        onClick={() => {
-          setSection("");
-          setIsNavBar(false);
-        }}
+        className={`items-start flex flex-col title-div ${
+          section.length && "p-3"
+        }`}
       >
-        <b className="text-6xl title-name">Ian Lau</b>
-        <h2 className="text-3xl">Software Engineer</h2>
+        <b
+          className="text-6xl title-name cursor-pointer"
+          onClick={() => {
+            setSection("");
+            setIsNavBar(false);
+          }}
+        >
+          Ian Lau
+        </b>
+        <h2
+          className="text-3xl cursor-pointer"
+          onClick={() => {
+            setSection("");
+            setIsNavBar(false);
+          }}
+        >
+          Software Engineer
+        </h2>
       </div>
-      {navi}
+      {!isLoading && navi}
       {content}
     </div>
   );

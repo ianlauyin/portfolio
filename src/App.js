@@ -10,7 +10,7 @@ export default function App() {
       <div
         className={`absolute ${
           section.length
-            ? "p-3 title-to-nav w-full"
+            ? "title-to-nav w-full"
             : "absolute-center nav-to-title"
         }`}
       >

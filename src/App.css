@@ -79,3 +79,32 @@
   object-fit: contain;
   margin-right: 5px;
 }
+
+.contact-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@keyframes container-color {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+.contact-icon-container:hover {
+  background-size: 200%;
+  animation: container-color 5s ease infinite;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    -45deg,
+    oklch(var(--p)),
+    oklch(var(--s)),
+    oklch(var(--a)),
+    oklch(var(--p))
+  );
+}

@@ -20,7 +20,6 @@ import RESTAPIPhoto from "./img/RESTAPI.png";
 import SequelizePhoto from "./img/Sequelize.png";
 import TailwindCSSPhoto from "./img/TailwindCSS.png";
 import TypescriptPhoto from "./img/Typescript.png";
-import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuoteRounded";
 
 export default function AboutMe() {
   return (
@@ -150,28 +149,28 @@ export default function AboutMe() {
       </div>
       <div className="divider divider-accent">Personality:</div>
       <div className="w-full flex justify-around flex-wrap">
-        <div className="chat-end mt-5">
+        <div className="chat-end my-5">
           <div className="w-56 h-32 chat-bubble chat-bubble-info flex flex-col justify-between">
             <b className="text-3xl self-start">“</b>
             <b className="text-xl">Quick Learner</b>
             <b className="text-3xl self-end">„</b>
           </div>
         </div>
-        <div className="chat-end mt-5">
+        <div className="chat-end my-5">
           <div className="w-56 h-32 chat-bubble chat-bubble-success flex flex-col justify-between">
             <b className="text-3xl self-start">“</b>
             <b className="text-xl">Challenge Taker</b>
             <b className="text-3xl self-end">„</b>
           </div>
         </div>
-        <div className="chat-end mt-5">
+        <div className="chat-end my-5">
           <div className="w-56 h-32 chat-bubble chat-bubble-warning flex flex-col justify-between">
             <b className="text-3xl self-start">“</b>
             <b className="text-xl">Team Player</b>
             <b className="text-3xl self-end">„</b>
           </div>
         </div>
-        <div className="chat-end mt-5">
+        <div className="chat-end my-5">
           <div className="w-56 h-32 chat-bubble chat-bubble-error flex flex-col justify-between">
             <b className="text-3xl self-start">“</b>
             <b className="text-xl">Problem Solver</b>
@@ -181,12 +180,12 @@ export default function AboutMe() {
       </div>
       <div className="divider divider-success">Passion:</div>
       <div className="w-full flex justify-around flex-wrap">
-        <div className="chat-end ">
+        <div className="chat-end mb-5">
           <div className="w-56 chat-bubble chat-bubble-primary">
             <b className="text-xl">Coding Challenges</b>
           </div>
         </div>
-        <div className="chat-end">
+        <div className="chat-end mb-5">
           <div className="w-56 chat-bubble chat-bubble-secondary">
             <b className="text-xl">Strategy Board Games</b>
           </div>
