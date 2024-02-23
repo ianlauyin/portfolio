@@ -20,6 +20,7 @@ import RESTAPIPhoto from "./img/RESTAPI.png";
 import SequelizePhoto from "./img/Sequelize.png";
 import TailwindCSSPhoto from "./img/TailwindCSS.png";
 import TypescriptPhoto from "./img/Typescript.png";
+import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuoteRounded";
 
 export default function AboutMe() {
   return (
@@ -27,13 +28,13 @@ export default function AboutMe() {
       <b className="text-lg">Hello! I am Ian. Welcome to my page.</b>
       <div className="divider divider-primary">Background:</div>
       <div className="flex flex-col space-y-3 items-center sm:flex-row">
-        <p className="sm:w-3/4">
+        <p className="w-3/4 sm:p-5">
           Back in the day when I was studying at university, programming was
           really catching my eyes. I feel "in the zone" when I am reading or
           writing programming languages. After several years in society, I think
           software engineering is really my dream job and what I am really
           passionate about. And I also have the passion to learn more
-          programming languages,skills and do more practice on my algorithm.
+          programming languages, skills and do more practice on my algorithm.
         </p>
         <div className="carousel sm:carousel-vertical rounded-box w-52 h-56 self-center">
           <div className="carousel-item w-full h-full">
@@ -147,8 +148,50 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
+      <div className="divider divider-accent">Personality:</div>
+      <div className="w-full flex justify-around flex-wrap">
+        <div className="chat-end mt-5">
+          <div className="w-56 h-32 chat-bubble chat-bubble-info flex flex-col justify-between">
+            <b className="text-3xl self-start">“</b>
+            <b className="text-xl">Quick Learner</b>
+            <b className="text-3xl self-end">„</b>
+          </div>
+        </div>
+        <div className="chat-end mt-5">
+          <div className="w-56 h-32 chat-bubble chat-bubble-success flex flex-col justify-between">
+            <b className="text-3xl self-start">“</b>
+            <b className="text-xl">Challenge Taker</b>
+            <b className="text-3xl self-end">„</b>
+          </div>
+        </div>
+        <div className="chat-end mt-5">
+          <div className="w-56 h-32 chat-bubble chat-bubble-warning flex flex-col justify-between">
+            <b className="text-3xl self-start">“</b>
+            <b className="text-xl">Team Player</b>
+            <b className="text-3xl self-end">„</b>
+          </div>
+        </div>
+        <div className="chat-end mt-5">
+          <div className="w-56 h-32 chat-bubble chat-bubble-error flex flex-col justify-between">
+            <b className="text-3xl self-start">“</b>
+            <b className="text-xl">Problem Solver</b>
+            <b className="text-3xl self-end">„</b>
+          </div>
+        </div>
+      </div>
+      <div className="divider divider-success">Passion:</div>
+      <div className="w-full flex justify-around flex-wrap">
+        <div className="chat-end ">
+          <div className="w-56 chat-bubble chat-bubble-primary">
+            <b className="text-xl">Coding Challenges</b>
+          </div>
+        </div>
+        <div className="chat-end">
+          <div className="w-56 chat-bubble chat-bubble-secondary">
+            <b className="text-xl">Strategy Board Games</b>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-//Character
-//Passion
