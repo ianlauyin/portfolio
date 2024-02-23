@@ -1,6 +1,6 @@
 import preview from "./img/preview.png";
 
-export default function BulletSummary() {
+export default function BulletSummary({ handleSelectProject }) {
   return (
     <div className="card w-80 bg-base-300 ring shadow-2xl">
       <figure className="px-10 pt-10">
@@ -18,7 +18,12 @@ export default function BulletSummary() {
           rounds as possible.
         </p>
         <div className="card-actions flex justify-end">
-          <button className="btn btn-primary">Details</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => handleSelectProject("bullet")}
+          >
+            Details
+          </button>
           <button
             className="btn btn-primary"
             onClick={() =>

@@ -1,6 +1,6 @@
 import preview from "./img/preview.png";
 
-export default function LingoSummary() {
+export default function LingoSummary({ handleSelectProject }) {
   return (
     <div className="card w-80 bg-base-300  ring shadow-2xl">
       <figure className="px-10 pt-10">
@@ -17,7 +17,12 @@ export default function LingoSummary() {
           including flashcards, a translator, and game-based quizzes.
         </p>
         <div className="card-actions flex justify-end">
-          <button className="btn btn-primary">Details</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => handleSelectProject("lingo")}
+          >
+            Details
+          </button>
           <button
             className="btn btn-primary"
             onClick={() => window.open("https://rocket-lingo.netlify.app/")}

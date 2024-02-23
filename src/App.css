@@ -165,3 +165,8 @@
   z-index: 50;
   transform: rotate(90deg) scale(150%);
 }
+
+.select-project-animation {
+  transform: translate(-30%, -320px) scale(10%) rotate(90deg);
+  transition-duration: 1s;
+}

@@ -56,7 +56,7 @@ export default function Title({ setSection, section }) {
         <input
           type="radio"
           role="tab"
-          className={`tab tab-custom [--tab-border-color:primary] ${
+          className={`tab [--tab-border-color:primary] ${
             section === "project" && "text-primary"
           }`}
           aria-label="PROJECT"
