@@ -39,12 +39,14 @@ export default function Title({ setSection, section }) {
   };
 
   const naviBar = (
-    <div role="tablist" className="tabs tabs-bordered tabs-lg">
+    <div role="tablist" className="tabs tabs-lifted tabs-lg overflow-x-hidden">
       <Grow in={isNavBar}>
         <input
           type="radio"
           role="tab"
-          className="tab"
+          className={`tab [--tab-border-color:primary] ${
+            section === "about" && "text-primary"
+          }`}
           aria-label="ABOUT ME"
           checked={section === "about"}
           onChange={() => handleChangeSection("about")}
@@ -54,7 +56,9 @@ export default function Title({ setSection, section }) {
         <input
           type="radio"
           role="tab"
-          className="tab"
+          className={`tab tab-custom [--tab-border-color:primary] ${
+            section === "project" && "text-primary"
+          }`}
           aria-label="PROJECT"
           checked={section === "project"}
           onChange={() => handleChangeSection("project")}
@@ -64,7 +68,9 @@ export default function Title({ setSection, section }) {
         <input
           type="radio"
           role="tab"
-          className="tab"
+          className={`tab tab [--tab-border-color:primary] ${
+            section === "contact" && "text-primary"
+          }`}
           aria-label="CONTACT"
           checked={section === "contact"}
           onChange={() => handleChangeSection("contact")}

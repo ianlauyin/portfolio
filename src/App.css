@@ -108,3 +108,7 @@
     oklch(var(--p))
   );
 }
+
+.tab-custom {
+  outline-offset: 5px;
+}
