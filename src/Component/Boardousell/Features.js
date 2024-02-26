@@ -25,18 +25,6 @@ export default function Features() {
     </div>
   );
 
-  const nonMember = (
-    <div id="nonMember" className="flex flex-col w-full">
-      <b data-toscrollspy-id="nonMember" className="self-start text-2xl p-5">
-        Non-Member User Interface
-      </b>
-      <div className="flex flex-col justify-around items-center">
-        <img src={preview} alt="preview" className="w-5/6 mb-5 rounded" />
-        <p className="w-5/6 sm:w-1/2"></p>
-      </div>
-    </div>
-  );
-
   const tools = (
     <div id="tools" className="flex flex-col w-full">
       <b data-toscrollspy-id="tools" className="self-start text-2xl p-5">
@@ -74,6 +62,18 @@ export default function Features() {
       </table>
     </div>
   );
+
+  // const nonMember = (
+  //   <div id="nonMember" className="flex flex-col w-full">
+  //     <b data-toscrollspy-id="nonMember" className="self-start text-2xl p-5">
+  //       Non-Member User Interface
+  //     </b>
+  //     <div className="flex flex-col justify-around items-center">
+  //       <img src={preview} alt="preview" className="w-5/6 mb-5 rounded" />
+  //       <p className="w-5/6 sm:w-1/2"></p>
+  //     </div>
+  //   </div>
+  // );
 
   return (
     <div className="flex flex-col w-full items-center">
