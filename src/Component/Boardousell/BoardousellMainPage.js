@@ -6,7 +6,7 @@ import Backend from "./Backend";
 
 export default function BoardousellMainPage() {
   const [section, setSection] = useState("features");
-  let sectionDetail = <Features />;
+  let sectionDetail;
   switch (section) {
     case "frontend":
       sectionDetail = <Frontend />;
@@ -14,13 +14,15 @@ export default function BoardousellMainPage() {
     case "backend":
       sectionDetail = <Backend />;
       break;
+    default:
+      sectionDetail = <Features />;
   }
 
   return (
     <div>
       <div
         role="tablist"
-        className="tabs sticky tabs-md tabs-boxed bg-base-200  overflow-x-hidden"
+        className="tabs sticky tabs-md tabs-boxed bg-base-200 overflow-x-hidden"
       >
         <Grow in>
           <input

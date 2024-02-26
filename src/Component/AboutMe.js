@@ -1,6 +1,4 @@
-import Photo1 from "./img/IanLauPhoto1.jpg";
-import Photo2 from "./img/IanLauPhoto2.jpg";
-import Photo3 from "./img/IanLauPhoto3.jpg";
+import Photo1 from "./img/IanLauPhoto.jpg";
 import Auth0Photo from "./img/Auth0.png";
 import BootstrapPhoto from "./img/Bootstrap.png";
 import CSSPhoto from "./img/CSS.png";
@@ -35,17 +33,11 @@ export default function AboutMe() {
           passionate about. And I also have the passion to learn more
           programming languages, skills and do more practice on my algorithm.
         </p>
-        <div className="carousel sm:carousel-vertical rounded-box w-52 h-56 self-center">
-          <div className="carousel-item w-full h-full">
-            <img src={Photo1} alt="photo1" className="w-full h-full" />
-          </div>
-          <div className="carousel-item w-full">
-            <img src={Photo2} alt="photo2" className="w-full h-full" />
-          </div>
-          <div className="carousel-item w-full">
-            <img src={Photo3} alt="photo3" className="w-full h-full" />
-          </div>
-        </div>
+        <img
+          src={Photo1}
+          alt="photo1"
+          className=" rounded-box w-52 h-56 self-center"
+        />
       </div>
       <div className="divider divider-secondary">Skills:</div>
       <div className="flex flex-col w-5/6 items-center space-y-10 sm:flex-row sm:justify-between sm:space-y-0 sm:items-stretch">

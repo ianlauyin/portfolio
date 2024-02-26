@@ -79,6 +79,8 @@ export default function Project() {
     case "bullet":
       projectDetail = <BulletMainPage />;
       break;
+    default:
+      break;
   }
   return project ? projectDetail : selectProject;
 }

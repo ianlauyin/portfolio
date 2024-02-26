@@ -80,13 +80,6 @@
   margin-right: 5px;
 }
 
-.contact-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
 @keyframes container-color {
   0% {
     background-position: 0% 0%;
@@ -96,7 +89,10 @@
   }
 }
 
-.contact-icon-container:hover {
+.contact-content-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
   background-size: 200%;
   animation: container-color 5s ease infinite;
   border-radius: 5px;
