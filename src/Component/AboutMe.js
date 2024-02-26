@@ -12,7 +12,7 @@ import NodeJsPhoto from "./img/NodeJS.png";
 import noSQLPhoto from "./img/noSQL.png";
 import PostgreSQLPhoto from "./img/PostgreSQL.png";
 import PythonPhoto from "./img/Python.png";
-import ReactPhoto from "./img/React.png";
+import ReactPhoto from "./img/React.svg";
 import ReactRouterPhoto from "./img/ReactRouter.png";
 import RESTAPIPhoto from "./img/RESTAPI.png";
 import SequelizePhoto from "./img/Sequelize.png";

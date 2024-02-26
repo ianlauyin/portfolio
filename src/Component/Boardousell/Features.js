@@ -1,5 +1,7 @@
 import ScrollSpy from "react-ui-scrollspy";
 import preview from "./img/preview.png";
+import Auth0Photo from "../img/Auth0.png";
+import stripePhoto from "../img/stripe.svg";
 
 export default function Features() {
   const introduction = (
@@ -35,11 +37,50 @@ export default function Features() {
     </div>
   );
 
+  const tools = (
+    <div id="tools" className="flex flex-col w-full">
+      <b data-toscrollspy-id="tools" className="self-start text-2xl p-5">
+        Tools:
+      </b>
+      <table className="table w-1/2 self-center">
+        <tbody>
+          <tr>
+            <td>Authentication:</td>
+            <td>
+              <div className="flex justify-center items-center border border-primary">
+                <img
+                  src={Auth0Photo}
+                  alt="Auth0Photo"
+                  className="object-contain mr-5 w-20"
+                />
+                Auth0
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Payment:</td>
+            <td>
+              <div className="flex justify-center items-center border border-primary">
+                <img
+                  src={stripePhoto}
+                  alt="stripehoto"
+                  className="object-contain mr-5 w-20"
+                />
+                Stripe
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+
   return (
     <div className="flex flex-col w-full items-center">
       <ScrollSpy>
         {introduction}
-        {nonMember}
+        {tools}
+        {/* {nonMember} */}
       </ScrollSpy>
     </div>
   );

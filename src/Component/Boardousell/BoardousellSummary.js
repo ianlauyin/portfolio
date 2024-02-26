@@ -17,13 +17,38 @@ export default function BoardousellSummary({ handleSelectProject }) {
           shop, while also enabling shop owners to manage orders and projects on
           the same site.
         </p>
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-info m-1">
+            You can try out the function in the apps using account:
+          </div>
+          <div className="dropdown-content z-50 p-2 shadow bg-neutral rounded-box w-max flex flex-col items-start">
+            <div className="flex flex-col items-start m-1 p-1 border border-primary">
+              <b>Admin:</b>
+              <p>Acc: adminIanLau@admin.com</p>
+              <p>PW: IanLauAdmin9</p>
+            </div>
+            <div className="flex flex-col items-start m-1 p-1 border border-secondary">
+              <b>Customer:</b>
+              <p>Acc: customer@customer.com</p>
+              <p>PW: Customer1</p>
+            </div>
+            <div className="flex flex-col items-start m-1 p-1 border border-accent">
+              <b>Card Payment {"(Testing)"}:</b>
+              <p>Card Number: 4242 4242 4242 4242</p>
+              <p>Expire Date: Any Date</p>
+              <p>CVC: Any 3-digit number</p>
+            </div>
+          </div>
+        </div>
+        <p></p>
+
         <div className="card-actions flex justify-end">
-          {/* <button
+          <button
             className="btn btn-primary"
             onClick={() => handleSelectProject("boardousell")}
           >
             Details
-          </button> */}
+          </button>
           <button
             className="btn btn-primary"
             onClick={() => window.open("https://boardousell.netlify.app")}
