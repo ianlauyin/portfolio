@@ -3,8 +3,9 @@ import { useState } from "react";
 import Features from "./Features";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import ProjectMenu from "../ProjectMenu";
 
-export default function BoardousellMainPage() {
+export default function BoardousellMainPage({ setProject }) {
   const [section, setSection] = useState("features");
   let sectionDetail;
   switch (section) {
@@ -56,6 +57,7 @@ export default function BoardousellMainPage() {
         </Grow>
       </div>
       {sectionDetail}
+      <ProjectMenu setProject={setProject} />
     </div>
   );
 }

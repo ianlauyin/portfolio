@@ -7,6 +7,7 @@ module.exports = {
     "./src/Component/AboutMe.js",
     "./src/Component/Contact.js",
     "./src/Component/Project.js",
+    "./src/Component/ProjectMenu.js",
     "./src/Component/Boardousell/BoardousellSummary.js",
     "./src/Component/Boardousell/BoardousellMainPage.js",
     "./src/Component/Boardousell/Features.js",

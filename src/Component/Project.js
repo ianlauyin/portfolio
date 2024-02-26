@@ -71,13 +71,13 @@ export default function Project() {
   let projectDetail = null;
   switch (project) {
     case "boardousell":
-      projectDetail = <BoardousellMainPage />;
+      projectDetail = <BoardousellMainPage setProject={setProject} />;
       break;
     case "lingo":
-      projectDetail = <LingoMainPage />;
+      projectDetail = <LingoMainPage setProject={setProject} />;
       break;
     case "bullet":
-      projectDetail = <BulletMainPage />;
+      projectDetail = <BulletMainPage setProject={setProject} />;
       break;
     default:
       break;
