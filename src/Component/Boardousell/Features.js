@@ -30,36 +30,24 @@ export default function Features() {
       <b data-toscrollspy-id="tools" className="self-start text-2xl p-5">
         Tools:
       </b>
-      <table className="table w-1/2 self-center">
-        <tbody>
-          <tr>
-            <td>Authentication:</td>
-            <td>
-              <div className="flex justify-center items-center border border-primary">
-                <img
-                  src={Auth0Photo}
-                  alt="Auth0Photo"
-                  className="object-contain mr-5 w-20"
-                />
-                Auth0
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Payment:</td>
-            <td>
-              <div className="flex justify-center items-center border border-primary">
-                <img
-                  src={stripePhoto}
-                  alt="stripehoto"
-                  className="object-contain mr-5 w-20"
-                />
-                Stripe
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="flex justify-around flex-wrap">
+        <div className="flex justify-center items-center border border-primary m-5 px-5">
+          <img
+            src={Auth0Photo}
+            alt="auth0Photo"
+            className="object-contain mr-5 w-20"
+          />
+          Auth0
+        </div>
+        <div className="flex justify-center items-center border border-primary m-5 px-5">
+          <img
+            src={stripePhoto}
+            alt="stripePhoto"
+            className="object-contain mr-5 w-20"
+          />
+          Stripe
+        </div>
+      </div>
     </div>
   );
 
