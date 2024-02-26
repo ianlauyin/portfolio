@@ -17,12 +17,12 @@ export default function LingoSummary({ handleSelectProject }) {
           including flashcards, a translator, and game-based quizzes.
         </p>
         <div className="card-actions flex justify-end">
-          <button
+          {/* <button
             className="btn btn-primary"
             onClick={() => handleSelectProject("lingo")}
           >
             Details
-          </button>
+          </button> */}
           <button
             className="btn btn-primary"
             onClick={() => window.open("https://rocket-lingo.netlify.app/")}

@@ -18,12 +18,12 @@ export default function BulletSummary({ handleSelectProject }) {
           rounds as possible.
         </p>
         <div className="card-actions flex justify-end">
-          <button
+          {/* <button
             className="btn btn-primary"
             onClick={() => handleSelectProject("bullet")}
           >
             Details
-          </button>
+          </button> */}
           <button
             className="btn btn-primary"
             onClick={() =>

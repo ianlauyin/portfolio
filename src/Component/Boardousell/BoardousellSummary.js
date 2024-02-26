@@ -18,12 +18,12 @@ export default function BoardousellSummary({ handleSelectProject }) {
           the same site.
         </p>
         <div className="card-actions flex justify-end">
-          <button
+          {/* <button
             className="btn btn-primary"
             onClick={() => handleSelectProject("boardousell")}
           >
             Details
-          </button>
+          </button> */}
           <button
             className="btn btn-primary"
             onClick={() => window.open("https://boardousell.netlify.app")}

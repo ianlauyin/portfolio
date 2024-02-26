@@ -2,11 +2,18 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 export default function ProjectMenu({ setProject }) {
   return (
-    <div className="dropdown dropdown-top dropdown-hover dropdown-end fixed bottom-5 right-5">
-      <div className="btn btn-circle btn-secondary ring ring-accent">
+    <div className="dropdown dropdown-hover dropdown-top dropdown-end fixed bottom-5 right-5">
+      <div
+        tabIndex={0}
+        role="button"
+        className="btn btn-circle btn-secondary ring ring-accent"
+      >
         <MenuRoundedIcon />
       </div>
-      <ul className="dropdown-content z-50 bg-neutral menu rounded-lg space-y-2">
+      <ul
+        tabIndex={0}
+        className="dropdown-content z-50 bg-neutral menu rounded-lg space-y-2"
+      >
         <li>
           <button
             className="btn btn-info"
