@@ -2,6 +2,7 @@ import expressJSPhoto from "../img/Expressjs.png";
 import postgreSQLPhoto from "../img/PostgreSQL.png";
 import sequelizePhoto from "../img/Sequelize.png";
 import firebasePhoto from "../img/Firebase.png";
+import structurePhoto from "./BackendImg/SQLStructure.png";
 
 export default function Backend() {
   const tools = (
@@ -44,5 +45,23 @@ export default function Backend() {
     </div>
   );
 
-  return <div className="flex flex-col w-full items-center">{tools}</div>;
+  const structure = (
+    <div className="flex flex-col w-full">
+      <b className="self-start text-2xl p-5">DB Structure:</b>
+      <div className="flex justify-around flex-wrap">
+        <img
+          alt="structurePhoto"
+          src={structurePhoto}
+          className="w-full sm:w-1/2 h-auto object-contain p-2 rounded-2xl"
+        />
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="flex flex-col w-full items-center">
+      {tools}
+      {structure}
+    </div>
+  );
 }
