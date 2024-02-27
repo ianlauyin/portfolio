@@ -52,7 +52,7 @@ export default function Backend() {
         <img
           alt="structurePhoto"
           src={structurePhoto}
-          className="w-full sm:w-1/2 h-auto object-contain p-2 rounded-2xl"
+          className="w-full sm:w-5/6 h-auto object-contain p-2 rounded-2xl"
         />
       </div>
     </div>
