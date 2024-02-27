@@ -23,7 +23,7 @@ export default function BoardousellMainPage({ setProject }) {
     <div>
       <div
         role="tablist"
-        className="tabs sticky tabs-md tabs-boxed bg-base-200 overflow-x-hidden"
+        className="tabs sticky top-0 tabs-boxed bg-base-200 overflow-x-hidden z-10"
       >
         <Grow in>
           <input

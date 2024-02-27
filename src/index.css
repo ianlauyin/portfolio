@@ -8,7 +8,3 @@ body {
 code {
   font-family: "Roboto Mono", monospace;
 }
-
-.active-scroll-spy {
-  position: sticky;
-}

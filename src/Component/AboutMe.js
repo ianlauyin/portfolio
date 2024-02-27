@@ -26,12 +26,13 @@ export default function AboutMe() {
       <div className="divider divider-primary">Background:</div>
       <div className="flex flex-col space-y-3 items-center sm:flex-row">
         <p className="w-3/4 sm:p-5">
-          Back in the day when I was studying at university, programming was
-          really catching my eyes. I feel "in the zone" when I am reading or
-          writing programming languages. After several years in society, I think
-          software engineering is really my dream job and what I am really
-          passionate about. And I also have the passion to learn more
-          programming languages, skills and do more practice on my algorithm.
+          During my time at university, I developed a keen interest in
+          programming. The world of programming captivated me, and I found
+          myself fully engrossed when reading and writing code. As I ventured
+          into the professional world, I realized that software engineering is
+          my true calling, and it is a field that ignites my passion. I am
+          driven to continuously expand my knowledge of programming languages,
+          enhance my skillset, and engage in algorithmic practice.
         </p>
         <img
           src={Photo1}

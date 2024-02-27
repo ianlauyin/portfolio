@@ -2,7 +2,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 export default function ProjectMenu({ setProject }) {
   return (
-    <div className="dropdown dropdown-hover dropdown-top dropdown-end fixed bottom-5 right-5">
+    <div className="dropdown dropdown-hover dropdown-top dropdown-end fixed bottom-5 right-5 z-50">
       <div
         tabIndex={0}
         role="button"
@@ -12,7 +12,7 @@ export default function ProjectMenu({ setProject }) {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-50 bg-neutral menu rounded-lg space-y-2"
+        className="dropdown-content bg-neutral menu rounded-lg space-y-2"
       >
         <li>
           <button
