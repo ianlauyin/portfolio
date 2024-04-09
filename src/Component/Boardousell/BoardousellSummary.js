@@ -17,7 +17,7 @@ export default function BoardousellSummary({ handleSelectProject }) {
           shop, while also enabling shop owners to manage orders and projects on
           the same site.
         </p>
-        {/* <div className="dropdown">
+        <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-info m-1">
             You can try out the function in the apps using account:
           </div>
@@ -39,9 +39,9 @@ export default function BoardousellSummary({ handleSelectProject }) {
               <p>CVC: Any 3-digit number</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="card-actions flex justify-end">
+        <div className="card-actions flex justify-end">
           <button
             className="btn btn-primary"
             onClick={() => handleSelectProject("boardousell")}
@@ -54,7 +54,7 @@ export default function BoardousellSummary({ handleSelectProject }) {
           >
             Deployed Site
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -24,14 +24,14 @@ export default function BulletSummary({ handleSelectProject }) {
           >
             Details
           </button> */}
-          {/* <button
+          <button
             className="btn btn-primary"
             onClick={() =>
               window.open("https://ianlauyin.github.io/project1-bootcamp/")
             }
           >
             Deployed Site
-          </button> */}
+          </button>
         </div>
       </div>
     </div>
