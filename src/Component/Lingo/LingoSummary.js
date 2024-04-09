@@ -23,12 +23,12 @@ export default function LingoSummary({ handleSelectProject }) {
           >
             Details
           </button> */}
-          <button
+          {/* <button
             className="btn btn-primary"
             onClick={() => window.open("https://rocket-lingo.netlify.app/")}
           >
             Deployed Site
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
