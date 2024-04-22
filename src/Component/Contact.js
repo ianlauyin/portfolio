@@ -13,64 +13,57 @@ export default function Contact() {
     case "phone":
       content = (
         <Zoom in={hover === "phone"}>
-          <div
+          <a
+            href="tel:+85257030374"
             className="contact-content-container"
             onMouseEnter={() => setHover("phone")}
             onMouseLeave={() => setHover("")}
           >
-            <img src={phone} alt="phone" className="w-14 h-14" />
-            <a href="tel:+85257030374" className="text-base-100 pl-5">
-              +852 5703 0374
-            </a>
-          </div>
+            <img src={phone} alt="phone" className="w-14 h-14 mr-4" />
+            +852 5703 0374
+          </a>
         </Zoom>
       );
       break;
     case "whatsapp":
       content = (
         <Zoom in={hover === "whatsapp"}>
-          <div
+          <a
+            href="https://wa.me/85257030374"
             className="contact-content-container"
             onMouseEnter={() => setHover("whatsapp")}
           >
-            <img src={whatsapp} alt="whatsapp" className="w-14 h-14" />
-            <a href="https://wa.me/85257030374" className="text-base-100 pl-5">
-              Whatsapp me
-            </a>
-          </div>
+            <img src={whatsapp} alt="whatsapp" className="w-14 h-14 mr-4" />
+            Whatsapp me
+          </a>
         </Zoom>
       );
       break;
     case "email":
       content = (
         <Zoom in={hover === "email"}>
-          <div
+          <a
+            href="mailto:ianlauyin@gmail.com"
             className="contact-content-container"
             onMouseEnter={() => setHover("email")}
           >
-            <img src={email} alt="email" className="w-14 h-14" />
-            <a href="mailto:ianlauyin@gmail.com" className="text-base-100 pl-5">
-              ianlauyin@gmail.com
-            </a>
-          </div>
+            <img src={email} alt="email" className="w-14 h-14 mr-4" />
+            ianlauyin@gmail.com
+          </a>
         </Zoom>
       );
       break;
     case "github":
       content = (
         <Zoom in={hover === "github"}>
-          <div
+          <a
+            href="https://github.com/ianlauyin"
             className="contact-content-container"
             onMouseEnter={() => setHover("github")}
           >
-            <img src={github} alt="github" className="w-14 h-14" />
-            <a
-              href="https://github.com/ianlauyin"
-              className="text-base-100 pl-5"
-            >
-              https://github.com/ianlauyin
-            </a>
-          </div>
+            <img src={github} alt="github" className="w-14 h-14 mr-4" />
+            https://github.com/ianlauyin
+          </a>
         </Zoom>
       );
       break;

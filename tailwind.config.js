@@ -1,23 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+const fs = require("fs");
+const path = require("path");
+const componentFiles = [];
+const getAllJSFile = (currentPath) => {
+  const files = fs.readdirSync(currentPath);
+  for (const file of files) {
+    if (file.slice(-3) === ".js") {
+      componentFiles.push(currentPath + "/" + file);
+    }
+    if (!path.extname(file).length) {
+      getAllJSFile(currentPath + "/" + file);
+    }
+  }
+};
+getAllJSFile("./src");
 module.exports = {
-  content: [
-    "./src/App.js",
-    "./src/Component/Title.js",
-    "./src/Component/TitleNavi.js",
-    "./src/Component/AboutMe.js",
-    "./src/Component/Contact.js",
-    "./src/Component/Project.js",
-    "./src/Component/ProjectMenu.js",
-    "./src/Component/Boardousell/BoardousellSummary.js",
-    "./src/Component/Boardousell/BoardousellMainPage.js",
-    "./src/Component/Boardousell/Features.js",
-    "./src/Component/Boardousell/Frontend.js",
-    "./src/Component/Boardousell/Backend.js",
-    "./src/Component/Lingo/LingoSummary.js",
-    "./src/Component/Lingo/LingoMainPage.js",
-    "./src/Component/Bullet/BulletSummary.js",
-    "./src/Component/Bullet/BulletMainPage.js",
-  ],
+  content: componentFiles,
   theme: {
     extend: {},
   },

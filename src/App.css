@@ -75,7 +75,8 @@
 }
 
 .skill-list li img {
-  height: 20px;
+  aspect-ratio: 1/1;
+  height: 50px;
   object-fit: contain;
   margin-right: 5px;
 }
@@ -95,6 +96,7 @@
   padding: 10px;
   background-size: 200%;
   animation: container-color 5s ease infinite;
+  color: oklch(var(--b1));
   border-radius: 5px;
   background-image: linear-gradient(
     -45deg,
