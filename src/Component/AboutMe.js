@@ -1,7 +1,5 @@
-import AOS from "aos";
 import "aos/dist/aos.css";
 import photo1 from "./img/IanLauPhoto.jpg";
-import { useEffect } from "react";
 import Language from "./Skills/Language";
 import Frontend from "./Skills/Frontend";
 import Backend from "./Skills/Backend";
@@ -10,9 +8,6 @@ import VersionControl from "./Skills/VersionControl";
 import Others from "./Skills/Others";
 
 export default function AboutMe() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className="flex flex-col items-center pb-10">
       <b className="text-lg">Hello! I am Ian. Welcome to my page.</b>

@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
 import "./App.css";
 import Title from "./Component/Title";
 
 export default function App() {
   const [section, setSection] = useState("");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="App">
